@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css'
 import Nav from './components/navbar/Nav';
 import About from './components/about/About';
 import Timeline from "./components/timeline/Timeline";
