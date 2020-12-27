@@ -7,19 +7,15 @@ import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 import Contact from './components/contact/Contact';
 
-class App extends Component {
-  render() {
-    return (
-        <div className="app">
-          <Nav />
-          <About />
-          <Timeline />
-          <Projects />
-          <Contact />          
-          <Footer />          
-        </div>        
-    )
-  }
-}
-
-export default App;
+export default function App() {
+  return (
+    <div className="app">
+      <Nav />
+      <About />
+      <Timeline />
+      <Projects />
+      <Contact />          
+      <Footer />          
+    </div>    
+  );
+};
