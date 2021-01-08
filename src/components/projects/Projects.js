@@ -1,66 +1,90 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import React, { Component } from 'react';
-import './Projects.css'
-import { ProjectItems } from './ProjectItems';
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
+import styled from 'styled-components';
+import photosite from './assets/img/visualsbydandre.jpg';
 
-class Projects extends Component {
-    render() {
-        return (
-            <div id="projects">
-                <h2 className="section-title">Projects</h2>
-                <div className="projects-container">
-                    <div className="project-row">
-                        <div className="project-box">
-                            <h3 className="project-title"><a href={ProjectItems[0].link}>{ProjectItems[0].projectName}</a></h3>
-                            <br/>
-                            <p>{ProjectItems[0].description}</p>                            
-                            <br/>
-                            <span><b>Tools:</b> {ProjectItems[0].tools}</span> 
-                        </div>
-                        <div className="project-box">
-                            <h3 className="project-title"><a href={ProjectItems[1].link}>{ProjectItems[1].projectName}</a></h3>
-                            <br/>
-                            <p>{ProjectItems[1].description}</p>                            
-                            <br/>
-                            <span><b>Tools:</b> {ProjectItems[1].tools}</span>                 
-                        </div>
-                    </div> 
-                    <div className="project-row">
-                        <div className="project-box">
-                            <h3 className="project-title"><a href={ProjectItems[2].link}>{ProjectItems[2].projectName}</a></h3>
-                            <br/>
-                            <p>{ProjectItems[2].description}</p>                            
-                            <br/>
-                            <span><b>Tools:</b> {ProjectItems[2].tools}</span>
-                        </div>                     
-                        <div className="project-box">
-                            <h3 className="project-title"><a href={ProjectItems[3].link}>{ProjectItems[3].projectName}</a></h3>
-                            <br/>
-                            <p>{ProjectItems[3].description}</p>                            
-                            <br/>
-                            <span><b>Tools:</b> {ProjectItems[3].tools}</span>
-                        </div>
-                    </div>
-                    <div className="project-row">
-                        <div className="project-box">
-                            <h3 className="project-title"><a href={ProjectItems[4].link}>{ProjectItems[4].projectName}</a></h3>
-                            <br/>
-                            <p>{ProjectItems[4].description}</p>                            
-                            <br/>
-                            <span><b>Tools:</b> {ProjectItems[4].tools}</span>
-                        </div>
-                        <div className="project-box">
-                            <h3 className="project-title"><a href={ProjectItems[5].link}>{ProjectItems[5].projectName}</a></h3>
-                            <br/>
-                            <p>{ProjectItems[5].description}</p>                            
-                            <br/>
-                            <span><b>Tools:</b> {ProjectItems[5].tools}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+const ProjectList = styled.div`
+    padding-top: 7%;
+    width: 100%;
+    height: 100%;
+`;
+
+const Title = styled.h3`
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding-bottom: 5%;
+    font-size: 44px;
+`;
+
+const Center = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;  
+`;
+
+const projectTitle = {
+    fontSize: "24px",
+    color: "rgb(39, 221, 221)" 
+};
+
+const background = {
+    backgroundColor: "black",
+    color: "white"
+};
+
+const End = styled.span`
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 50px;
+`;
+
+export default function Projects() {
+    return (
+        <ProjectList id="projects">
+            <Title>Projects</Title>
+            <Center>
+                <Card style={{width: "600px"}}>
+                    <Card.Img variant="top" src={photosite} />
+                    <Card.Body style={background}>
+                        <Center>
+                            <Card.Title style={projectTitle}>
+                                Photography Portfolio
+                            </Card.Title>                        
+                        </Center>
+                        <Card.Text>
+                            <Center>
+                                Portfolio website for my photography and videos.
+                            </Center>                          
+                        </Card.Text>
+                        <Center>
+                            <Button 
+                            variant="primary" 
+                            style={{fontSize: "20px"}}
+                            href="https://visualsbydandre.com"
+                            >
+                                Visit Website
+                            </Button>                                  
+                        </Center>
+                    </Card.Body>                
+                </Card>     
+            </Center>        
+            <End>
+                My other coding projects can be found on my Github. 
+            </End>
+        </ProjectList>
+    )
 }
 
-export default Projects;
+{/* 
+name: 'Fancy Clock',
+link: 'https://pensive-newton-dc8f28.netlify.app',
+tools: 'HTML | CSS | Javascript',
+description: 'Clock showing the time of 4 different U.S. time zones with custom backgrounds for each.'
+*/}

@@ -15,6 +15,11 @@ export const ContactList = [
         cName: 'fa fa-linkedin contact-icon'
     },
     {
+        social: 'github',
+        url: 'https://github.com/DandreCampbell',
+        cName: 'fab fa-github contact-icon'
+    },
+    {
         social: 'instagram',
         url: 'https://www.instagram.com/dandre_campbell/',
         cName: 'fab fa-instagram contact-icon' 

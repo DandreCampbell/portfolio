@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import './App.css'
-import Nav from './components/navbar/Nav';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import NavBar from './components/navbar/NavBar';
 import About from './components/about/About';
 import Timeline from "./components/timeline/Timeline";
 import Projects from './components/projects/Projects';
@@ -10,12 +11,12 @@ import Contact from './components/contact/Contact';
 export default function App() {
   return (
     <div className="app">
-      <Nav />
+      <NavBar />
       <About />
       <Timeline />
       <Projects />
       <Contact />          
       <Footer />          
-    </div>    
+    </div> 
   );
 };
