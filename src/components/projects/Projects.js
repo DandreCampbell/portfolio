@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import photosite from './assets/img/visualsbydandre.jpg';
+import comparts from './assets/img/choosemyparts.png';
 
 const ProjectList = styled.div`
     padding-top: 7%;
@@ -75,6 +76,34 @@ export default function Projects() {
                     </Card.Body>                
                 </Card>     
             </Center>        
+            <Center>
+                <Card style={{width: "600px"}}>
+                    <Card.Img variant="top" src={comparts} />
+                    <Card.Body style={background}>
+                        <Center>
+                            <Card.Title style={projectTitle}>
+                                Choose My Parts
+                            </Card.Title>                        
+                        </Center>
+                        <Card.Text>
+                            <Center>
+                                Website designed to recommend its users different types of computer 
+                                parts that can be used to build their own Custom PC. Provides parts 
+                                for different budget ranges.
+                            </Center>                          
+                        </Card.Text>
+                        <Center>
+                            <Button 
+                            variant="primary" 
+                            style={{fontSize: "20px"}}
+                            href="https://romantic-stonebraker-6b2182.netlify.app/"
+                            >
+                                Visit Website
+                            </Button>                                  
+                        </Center>
+                    </Card.Body>                
+                </Card>                 
+            </Center>
             <End>
                 My other coding projects can be found on my Github. 
             </End>
