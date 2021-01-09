@@ -46,8 +46,8 @@ export default function About() {
                     of New York. I choose this area of development because it allows me to combine my 
                     creative side with my love for coding. Currently, I’m working in the IT field as 
                     a Technician but I’ve always had an interest in the Development field. I have 4 
-                    years of programming in various different languages but currently <Style>React.js</Style> is my 
-                    main focus.
+                    years of programming in various different languages such as Java and Python but 
+                    currently <Style>React.js</Style> is my main focus.
                 </Card.Text>
             </Card.Body>
         </Card>

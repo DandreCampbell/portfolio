@@ -5,8 +5,10 @@ import NavBar from './components/navbar/NavBar';
 import About from './components/about/About';
 import Timeline from "./components/timeline/Timeline";
 import Projects from './components/projects/Projects';
-import Footer from './components/footer/Footer';
+import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+
 
 export default function App() {
   return (
@@ -15,6 +17,7 @@ export default function App() {
       <About />
       <Timeline />
       <Projects />
+
       <Contact />          
       <Footer />          
     </div> 

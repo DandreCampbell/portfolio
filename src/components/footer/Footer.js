@@ -12,7 +12,7 @@ const Foot = styled.h3`
 export default function Footer() {
     return (
         <Container fluid id="footer" style={{textAlign:"center"}}> 
-            <Foot>Designed and Built by D'Andre Campbell, 2020</Foot>
+            <Foot>Built by D'Andre Campbell, 2021</Foot>
         </Container>
     );
-};
+}

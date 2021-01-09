@@ -76,7 +76,7 @@ export default function Projects() {
                     </Card.Body>                
                 </Card>     
             </Center>        
-            <Center>
+            <Center style={{paddingTop:"50px"}}>
                 <Card style={{width: "600px"}}>
                     <Card.Img variant="top" src={comparts} />
                     <Card.Body style={background}>
@@ -114,6 +114,5 @@ export default function Projects() {
 {/* 
 name: 'Fancy Clock',
 link: 'https://pensive-newton-dc8f28.netlify.app',
-tools: 'HTML | CSS | Javascript',
 description: 'Clock showing the time of 4 different U.S. time zones with custom backgrounds for each.'
 */}
