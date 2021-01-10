@@ -1,6 +1,7 @@
 import React from 'react';
 import './Timeline.css'
 import { TimelineItems } from './TimelineItems';
+import Footer from '../footer/Footer';
 
 export default function Timeline() {
     return (
@@ -24,6 +25,7 @@ export default function Timeline() {
                     </ul>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

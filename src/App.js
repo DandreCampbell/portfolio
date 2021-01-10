@@ -21,8 +21,7 @@ export default function App() {
           <Route path="/timeline" component={Timeline} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
-        </Switch>        
-        <Footer />          
+        </Switch>               
       </div> 
     </Router>
 

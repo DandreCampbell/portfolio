@@ -3,13 +3,13 @@ import { Card } from 'react-bootstrap';
 
 const aboutStyle = {
     width: "100vw",
-    height: "100vh",
+    height: "100%",
     backgroundColor: "black",
     color: "white"
 };
 
 const name = {
-    paddingTop: "12%",
+    paddingTop: "8%",
     fontSize: "70px",
     letterSpacing: "10px",
     textAlign: "center"

@@ -1,6 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import { ContactList } from './ContactList';
+import Footer from '../footer/Footer';
+
 
 export default function Contact() {
     return (
@@ -15,6 +17,7 @@ export default function Contact() {
                     )
                 })}
             </ul>
+            <Footer />
         </div>
     );
 };
