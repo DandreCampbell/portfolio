@@ -21,7 +21,7 @@ const iconStyle = {
 
 export default function NavBar() {
     return (
-        <Navbar collapseOnSelect expand="lg" className="nav-style" variant="dark" fixed="top">  
+        <Navbar collapseOnSelect expand="lg" className="nav-style" variant="dark">  
             <Navbar.Toggle aria-controls="responsive-navbar-nav" className="ml-auto" style={iconStyle} />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">
