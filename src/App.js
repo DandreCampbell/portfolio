@@ -8,18 +8,22 @@ import Projects from './components/projects/Projects';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 export default function App() {
   return (
-    <div className="app">
-      <NavBar />
-      <About />
-      <Timeline />
-      <Projects />
+    <Router>
+      <div className="app">
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={About} />
+          <Route path="/timeline" component={Timeline} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
+        </Switch>        
+        <Footer />          
+      </div> 
+    </Router>
 
-      <Contact />          
-      <Footer />          
-    </div> 
   );
 };
