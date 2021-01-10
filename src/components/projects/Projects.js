@@ -139,9 +139,3 @@ export default function Projects() {
         </ProjectList>
     )
 }
-
-{/* 
-name: 'Fancy Clock',
-link: 'https://pensive-newton-dc8f28.netlify.app',
-description: 'Clock showing the time of 4 different U.S. time zones with custom backgrounds for each.'
-*/}

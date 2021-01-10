@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import styled from 'styled-components';
 
 const aboutStyle = {
     width: "100vw",
@@ -31,10 +30,6 @@ const aboutText = {
     lineHeight: "1.8"
 };
 
-const Style = styled.span`
-    color: rgb(39, 221, 221);  
-`;
-
 export default function About() {
     return (
         <Card id="about" style={aboutStyle}>
@@ -46,8 +41,8 @@ export default function About() {
                     of New York. I choose this area of development because it allows me to combine my 
                     creative side with my love for coding. Currently, I’m working in the IT field as 
                     a Technician but I’ve always had an interest in the Development field. I have 4 
-                    years of programming in various different languages such as Java and Python but 
-                    currently <Style>React.js</Style> is my main focus.
+                    years of programming in various different languages such as <span style={{color:"#d9534f"}}>Java</span> and <span style={{color:"#9884fc"}}>Python</span> but 
+                    currently <span style={{color:"rgb(39, 221, 221)"}}>React.js</span> is my main focus.
                 </Card.Text>
             </Card.Body>
         </Card>
