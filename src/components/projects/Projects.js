@@ -2,6 +2,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import styled from 'styled-components';
+import './Projects.css'
 import photosite from './assets/img/visualsbydandre.jpg';
 import comparts from './assets/img/choosemyparts.png';
 import cryptosite from './assets/img/cryptoupdates.png';
@@ -61,6 +62,16 @@ export default function Projects() {
                                 Photography Portfolio
                             </Card.Title>                        
                         </Center>
+                        <Card.Subtitle>
+                            <Center>
+                                <ul>
+                                    <li><i className="fab fa-html5" /></li>
+                                    <li><i className="fab fa-css3-alt" /></li>
+                                    <li><i className="fab fa-js-square" /></li>
+                                    <li><i className="fab fa-bootstrap" /></li>
+                                </ul>
+                            </Center>
+                        </Card.Subtitle>
                         <Card.Text>
                             <Center>
                                 Portfolio website for my photography and videos.
@@ -87,6 +98,15 @@ export default function Projects() {
                                 Choose My Parts
                             </Card.Title>                        
                         </Center>
+                        <Card.Subtitle>
+                            <Center>
+                                <ul>
+                                    <li><i className="fab fa-react" /></li>
+                                    <li><i className="fab fa-css3-alt" /></li>
+                                    <li><i className="fab fa-bootstrap" /></li>
+                                </ul>
+                            </Center>
+                        </Card.Subtitle>
                         <Card.Text>
                             <Center>
                                 Website designed to recommend its users different types of computer 
@@ -115,6 +135,14 @@ export default function Projects() {
                                 Crypto Updates
                             </Card.Title>                        
                         </Center>
+                        <Card.Subtitle>
+                            <Center>
+                                <ul>
+                                    <li><i className="fab fa-react" /></li>
+                                    <li><i className="fab fa-css3-alt" /></li>
+                                </ul>
+                            </Center>
+                        </Card.Subtitle>
                         <Card.Text>
                             <Center>
                                 This site prints some of the most recent data on many popular

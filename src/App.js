@@ -7,7 +7,6 @@ import About from './components/about/About';
 import Timeline from "./components/timeline/Timeline";
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
 
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -24,6 +23,5 @@ export default function App() {
         </Switch>               
       </div> 
     </Router>
-
   );
 };
