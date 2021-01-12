@@ -25,6 +25,10 @@
     font-size: 40px;
 }
 
+.contact-icon:hover {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 500px) {
     .contact-icon {
         padding: 25px;
