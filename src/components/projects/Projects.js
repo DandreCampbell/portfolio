@@ -39,6 +39,13 @@ const background = {
     color: "white"
 };
 
+const btnStyle = {
+    backgroundColor: "rgb(39, 221, 221, .9)",
+    color: "black",
+    fontSize: "20px",
+    border: "none"
+};
+
 const End = styled.span`
     display: flex;
     justify-content: center;
@@ -79,8 +86,7 @@ export default function Projects() {
                         </Card.Text>
                         <Center>
                             <Button 
-                            variant="primary" 
-                            style={{fontSize: "20px"}}
+                            style={btnStyle}
                             href="https://visualsbydandre.com"
                             >
                                 Visit Website
@@ -116,8 +122,7 @@ export default function Projects() {
                         </Card.Text>
                         <Center>
                             <Button 
-                            variant="primary" 
-                            style={{fontSize: "20px"}}
+                            style={btnStyle}
                             href="https://romantic-stonebraker-6b2182.netlify.app/"
                             >
                                 Visit Website
@@ -152,8 +157,7 @@ export default function Projects() {
                         </Card.Text>
                         <Center>
                             <Button 
-                            variant="primary" 
-                            style={{fontSize: "20px"}}
+                            style={btnStyle}
                             href="https://mystifying-kare-7437aa.netlify.app/"
                             >
                                 Visit Website
