@@ -62,7 +62,7 @@ export default function Projects() {
             <Title>Projects</Title>
             <Center>
                 <Card style={{width: "600px"}}>
-                    <Card.Img variant="top" src={photosite} />
+                    <Card.Img variant="top" src={photosite} alt="Photographty Portfolio" />
                     <Card.Body style={background}>
                         <Center>
                             <Card.Title style={projectTitle}>
@@ -97,7 +97,7 @@ export default function Projects() {
             </Center>        
             <Center style={{paddingTop:"50px"}}>
                 <Card style={{width: "600px"}}>
-                    <Card.Img variant="top" src={comparts} />
+                    <Card.Img variant="top" src={comparts} alt="PC Building Website" />
                     <Card.Body style={background}>
                         <Center>
                             <Card.Title style={projectTitle}>
@@ -133,7 +133,7 @@ export default function Projects() {
             </Center>
             <Center style={{paddingTop:"50px"}}>
                 <Card style={{width: "600px"}}>
-                    <Card.Img variant="top" src={cryptosite} />
+                    <Card.Img variant="top" src={cryptosite} alt="Cryptocurrency information website" />
                     <Card.Body style={background}>
                         <Center>
                             <Card.Title style={projectTitle}>
