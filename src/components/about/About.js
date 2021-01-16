@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
-import goals from './img/goals.svg';
+import dev from './img/dev.svg';
 
 const aboutStyle = {
     width: "100vw",
@@ -28,7 +28,7 @@ const imgStyle = {
     justifyContent: "center",
     alignItems: "center",
     margin: "auto",
-    width: "375px",
+    width: "400px",
     height: "auto"
 };
 
@@ -58,7 +58,7 @@ export default function About() {
                         </Card.Text>                    
                     </Col>
                     <Col lg="6" style={{paddingTop:"50px"}}>
-                        <Card.Img src={goals} alt="Goals Illustration" style={imgStyle} />
+                        <Card.Img src={dev} alt="Goals Illustration" style={imgStyle} />
                     </Col>
                 </Row>
             </Card.Body>
