@@ -46,7 +46,7 @@ export default function About() {
             <Card.Body>
                 <Card.Title style={name}>D'Andre Campbell</Card.Title>
                 <Card.Subtitle className="mb-2" style={title}>Developer & Photographer</Card.Subtitle>
-                <Row style={{paddingTop:"15px"}}>
+                <Row style={{paddingTop:"15px", paddingBottom:"100px"}}>
                     <Col lg="6" style={{paddingTop:"25px"}}>
                         <Card.Text style={aboutText}>
                             Hey, my name is D’Andre. I’m a self taught, aspiring Front End Developer based out 
