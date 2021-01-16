@@ -36,7 +36,7 @@ const aboutText = {
     paddingTop: "5%",
     width: "87%",
     margin: "auto",
-    fontSize: "22px",
+    fontSize: "20px",
     lineHeight: "2.2"
 };
 
@@ -46,7 +46,7 @@ export default function About() {
             <Card.Body>
                 <Card.Title style={name}>D'Andre Campbell</Card.Title>
                 <Card.Subtitle className="mb-2" style={title}>Developer & Photographer</Card.Subtitle>
-                <Row style={{paddingTop:"20px"}}>
+                <Row style={{paddingTop:"15px"}}>
                     <Col lg="6" style={{paddingTop:"25px"}}>
                         <Card.Text style={aboutText}>
                             Hey, my name is D’Andre. I’m a self taught, aspiring Front End Developer based out 
