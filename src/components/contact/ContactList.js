@@ -1,26 +1,26 @@
 export const ContactList = [
     {
-        social: 'email',
+        social: 'EMAIL',
         url: 'mailto:dandrecampbell5@gmail.com',
         cName: 'fas fa-envelope contact-icon'
     },
     {
-        social: 'discord',
+        social: 'DISCORD',
         url: 'https://discordapp.com/users/456580598480240672',
         cName: 'fab fa-discord contact-icon'
     },
     {
-        social: 'linkin',
+        social: 'LINKEDIN',
         url: 'https://www.linkedin.com/in/dandre-campbell/',
         cName: 'fa fa-linkedin contact-icon'
     },
     {
-        social: 'github',
+        social: 'GITHUB',
         url: 'https://github.com/DandreCampbell',
         cName: 'fab fa-github contact-icon'
     },
     {
-        social: 'instagram',
+        social: 'INSTAGRAM',
         url: 'https://www.instagram.com/dandre_campbell/',
         cName: 'fab fa-instagram contact-icon' 
     }
