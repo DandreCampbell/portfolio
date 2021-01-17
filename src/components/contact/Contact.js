@@ -36,7 +36,7 @@ export default function Contact() {
                 {ContactList.map((item, index) => {
                     return (
                         <ListGroup.Item style={{border:"none", backgroundColor:"black"}}>
-                            <SocialName>{item.social}</SocialName>
+                            <SocialName style={{letterSpacing:"3px"}}>{item.social}</SocialName>
                             <SocialIcon 
                             key={index} 
                             href={item.url} 
