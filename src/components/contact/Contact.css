@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     text-decoration: underline;
-    padding-bottom: 5%;
+    padding-bottom: 30px;
     font-size: 44px;
 }
 
@@ -26,6 +26,7 @@
 
 .contact-icon:hover {
     text-decoration: none;
+    transform: scale(1.07);
 }
 
 @media screen and (max-width: 500px) {

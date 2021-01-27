@@ -43,7 +43,7 @@ const btnStyle = {
     backgroundColor: "rgb(39, 221, 221, .9)",
     color: "black",
     fontSize: "20px",
-    border: "none"
+    border: "none",
 };
 
 const End = styled.span`
@@ -169,6 +169,7 @@ export default function Projects() {
             <End>
                 My other coding projects can be found on my Github. 
             </End>
+            
             <Footer />
         </ProjectList>
     )

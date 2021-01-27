@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ListGroup } from 'react-bootstrap';
-import { ContactList } from './ContactList';
 import Footer from '../footer/Footer';
 import styled from 'styled-components';
 import './Contact.css';
@@ -29,27 +28,54 @@ const SocialIcon = styled.a`
 `;
 
 export default function Contact() {
+    // eslint-disable-next-line
+    const [socials, setSocials] = useState([
+        {
+            social: 'Email',
+            url: 'mailto:dandrecampbell5@gmail.com',
+            cName: 'fas fa-envelope contact-icon'
+        },
+        {
+            social: 'Discord',
+            url: 'https://discordapp.com/users/456580598480240672',
+            cName: 'fab fa-discord contact-icon'
+        },
+        {
+            social: 'LinkedIn',
+            url: 'https://www.linkedin.com/in/dandre-campbell/',
+            cName: 'fa fa-linkedin contact-icon'
+        },
+        {
+            social: 'Github',
+            url: 'https://github.com/DandreCampbell',
+            cName: 'fab fa-github contact-icon'
+        },
+        {
+            social: 'Instagram',
+            url: 'https://www.instagram.com/dandre_campbell/',
+            cName: 'fab fa-instagram contact-icon' 
+        }
+    ]);
+
     return (
         <div id="contact">
             <h2 className="section-title">Contact</h2>
             <ListGroup>
-                {ContactList.map((item, index) => {
-                    return (
-                        <ListGroup.Item style={{border:"none", backgroundColor:"black"}}>
-                            <SocialName style={{letterSpacing:"3px"}}>{item.social}</SocialName>
-                            <SocialIcon 
-                            key={index} 
-                            href={item.url} 
-                            className={item.cName}
-                            data-toggle="tooltip" 
-                            data-placement="right" 
-                            title={item.social}
-                            >
-                            </SocialIcon>
-                        </ListGroup.Item>
-                    )
-                })}  
+                {socials.map(media => ( 
+                    <ListGroup.Item style={{border:"none", backgroundColor:"black"}}>
+                        <SocialName style={{letterSpacing:"3px"}}>{media.social}</SocialName>
+                        <SocialIcon 
+                        href={media.url} 
+                        className={media.cName}
+                        data-toggle="tooltip" 
+                        data-placement="right" 
+                        title={media.social}
+                        >
+                        </SocialIcon>
+                    </ListGroup.Item>
+                ))}
             </ListGroup>   
+            
             <Footer />
         </div>
     );

@@ -25,6 +25,7 @@ export default function Timeline() {
                     </ul>
                 </div>
             </div>
+            
             <Footer />
         </div>
     );
