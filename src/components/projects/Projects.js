@@ -3,9 +3,9 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import './Projects.css'
-import photosite from './assets/img/visualsbydandre.jpg';
-import comparts from './assets/img/choosemyparts.png';
-import cryptosite from './assets/img/cryptoupdates.png';
+import photosite from './img/visualsbydandre.jpg';
+import comparts from './img/choosemyparts.png';
+import cryptosite from './img/cryptoupdates.png';
 import Footer from '../footer/Footer';
 
 const ProjectList = styled.div`

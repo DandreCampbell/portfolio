@@ -1,22 +1,9 @@
+
 #contact {
     width: 100vw;
     height: 90vh;
     display: inline-block;
     padding-top: 7%;
-}
-
-.section-title {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-    padding-bottom: 30px;
-    font-size: 44px;
-}
-
-.contact-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-icon {
@@ -35,7 +22,6 @@
         font-size: 30px;       
     }
 }
-
 
 @media screen and (max-width: 375px) {
     #contact {

@@ -1,12 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 import './Timeline.css'
 import { TimelineItems } from './TimelineItems';
 import Footer from '../footer/Footer';
 
+const Title = styled.h2`
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding-bottom: 5%;
+    font-size: 44px;
+`;
+
 export default function Timeline() {
     return (
         <div id="timeline">
-            <h2 className="section-title">Timeline</h2>
+            <Title className="section-title">Timeline</Title>
             <div className="container">
                 <div className="timeline">
                     <ul>                  

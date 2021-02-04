@@ -59,7 +59,17 @@ export default function Contact() {
 
     return (
         <div id="contact">
-            <h2 className="section-title">Contact</h2>
+            <h2 style={{
+                fontSize: "44px",
+                display: "flex",
+                justifyContent: "center",
+                textDecoration: "underline",
+                paddingTop: "20px",
+                paddingBottom: "30px",
+            }}
+            >
+                Contact
+            </h2>
             <ListGroup>
                 {socials.map(media => ( 
                     <ListGroup.Item style={{border:"none", backgroundColor:"black"}}>
