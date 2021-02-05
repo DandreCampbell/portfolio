@@ -7,6 +7,7 @@ import About from './components/about/About';
 import Timeline from "./components/timeline/Timeline";
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
+import NotFound from './components/notfound/NotFound';
 
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/timeline" component={Timeline} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route component={NotFound} />
         </Switch>               
     </Router>
   );
