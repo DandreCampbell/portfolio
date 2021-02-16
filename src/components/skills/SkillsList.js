@@ -46,3 +46,11 @@ export const OtherTech = [
         cName: 'fab fa-github ' 
     }
 ];
+
+/* 
+    Web Design / Dev
+    Mobile Deisgn
+    Prototyping
+    UI Design
+    Product Management
+*/

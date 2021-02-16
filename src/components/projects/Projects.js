@@ -1,12 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Button, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-import './Projects.css'
+import { ProjectItems } from './ProjectList';
+
 import photosite from './img/visualsbydandre.jpg';
 import comparts from './img/choosemyparts.png';
 import cryptosite from './img/cryptoupdates.png';
 import Footer from '../footer/Footer';
+
+const screenshots = [
+    photosite, comparts, cryptosite
+];
 
 const ProjectList = styled.div`
     padding-top: 7%;
@@ -22,30 +27,6 @@ const Title = styled.h3`
     font-size: 44px;
 `;
 
-const Center = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;  
-`;
-
-const projectTitle = {
-    fontSize: "24px",
-    color: "rgb(39, 221, 221)" 
-};
-
-const background = {
-    backgroundColor: "black",
-    color: "white"
-};
-
-const btnStyle = {
-    backgroundColor: "rgb(39, 221, 221, .9)",
-    color: "black",
-    fontSize: "20px",
-    border: "none",
-};
-
 const End = styled.span`
     display: flex;
     justify-content: center;
@@ -56,116 +37,54 @@ const End = styled.span`
     padding-top: 50px;
 `;
 
+const centering = {
+    display:"flex", 
+    justifyContent:"center", 
+    alignItems:"center"
+};  
+
 export default function Projects() {
     return (
         <ProjectList id="projects">
             <Title>Projects</Title>
-            <Center>
-                <Card style={{width: "600px"}}>
-                    <Card.Img variant="top" src={photosite} alt="Photographty Portfolio" />
-                    <Card.Body style={background}>
-                        <Center>
-                            <Card.Title style={projectTitle}>
-                                Photography Portfolio
-                            </Card.Title>                        
-                        </Center>
-                        <Card.Subtitle>
-                            <Center>
-                                <ul>
-                                    <li><i className="fab fa-html5" /></li>
-                                    <li><i className="fab fa-css3-alt" /></li>
-                                    <li><i className="fab fa-js-square" /></li>
-                                    <li><i className="fab fa-bootstrap" /></li>
-                                </ul>
-                            </Center>
-                        </Card.Subtitle>
-                        <Card.Text>
-                            <Center>
-                                Portfolio website for my photography and videos.
-                            </Center>                          
-                        </Card.Text>
-                        <Center>
-                            <Button 
-                            style={btnStyle}
-                            href="https://visualsbydandre.com"
-                            >
-                                Visit Website
-                            </Button>                                  
-                        </Center>
-                    </Card.Body>                
-                </Card>     
-            </Center>        
-            <Center style={{paddingTop:"50px"}}>
-                <Card style={{width: "600px"}}>
-                    <Card.Img variant="top" src={comparts} alt="PC Building Website" />
-                    <Card.Body style={background}>
-                        <Center>
-                            <Card.Title style={projectTitle}>
-                                Choose My Parts
-                            </Card.Title>                        
-                        </Center>
-                        <Card.Subtitle>
-                            <Center>
-                                <ul>
-                                    <li><i className="fab fa-react" /></li>
-                                    <li><i className="fab fa-css3-alt" /></li>
-                                    <li><i className="fab fa-bootstrap" /></li>
-                                </ul>
-                            </Center>
-                        </Card.Subtitle>
-                        <Card.Text>
-                            <Center>
-                                Website designed to recommend its users different types of computer 
-                                parts that can be used to build their own Custom PC. Provides parts 
-                                for different budget ranges.
-                            </Center>                          
-                        </Card.Text>
-                        <Center>
-                            <Button 
-                            style={btnStyle}
-                            href="https://romantic-stonebraker-6b2182.netlify.app/"
-                            >
-                                Visit Website
-                            </Button>                                  
-                        </Center>
-                    </Card.Body>                
-                </Card>                 
-            </Center>
-            <Center style={{paddingTop:"50px"}}>
-                <Card style={{width: "600px"}}>
-                    <Card.Img variant="top" src={cryptosite} alt="Cryptocurrency information website" />
-                    <Card.Body style={background}>
-                        <Center>
-                            <Card.Title style={projectTitle}>
-                                Crypto Updates
-                            </Card.Title>                        
-                        </Center>
-                        <Card.Subtitle>
-                            <Center>
-                                <ul>
-                                    <li><i className="fab fa-react" /></li>
-                                    <li><i className="fab fa-css3-alt" /></li>
-                                </ul>
-                            </Center>
-                        </Card.Subtitle>
-                        <Card.Text>
-                            <Center>
-                                This site prints some of the most recent data on many popular
-                                cryptocurrencies such as Bitcoin. Uses the Gecko API and refreshes 
-                                the information as soon as it's able to.
-                            </Center>                          
-                        </Card.Text>
-                        <Center>
-                            <Button 
-                            style={btnStyle}
-                            href="https://mystifying-kare-7437aa.netlify.app/"
-                            >
-                                Visit Website
-                            </Button>                                  
-                        </Center>
-                    </Card.Body>                
-                </Card>                 
-            </Center>
+                {ProjectItems.map((item, index) => (
+                    <Row style={{paddingBottom:"35px"}}>
+                        <Col md={7} style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                            <img src={screenshots[index]} alt={item.alt} width="90%" height="auto" />
+                        </Col>
+                        <Col md={5} style={{paddingTop:"50px"}}>
+                            <h2 style={{
+                                fontSize: "24px",
+                                color: "rgb(39, 221, 221)",
+                                display:"flex", 
+                                justifyContent:"center", 
+                                alignItems:"center"
+                            }}>
+                                {item.website}
+                            </h2>
+                            <p style={{width:"75%", color:"white", margin:"auto", paddingTop:"10px"}}>
+                                {item.description}
+                            </p>
+                            <ul style={centering}>
+                                {ProjectItems.map((item, index) => (
+                                    <li style={{fontSize:"30px", padding:"20px"}}>
+                                        <i className={item.icons[index]} />
+                                    </li>
+                                ))}
+                            </ul>     
+                            <div style={centering}>
+                                <Button href={item.url} style={{
+                                    fontSize: "20px",                                    
+                                    backgroundColor: "rgb(39, 221, 221, .9)",
+                                    color: "black",
+                                    border: "none",
+                                }}>
+                                    Visit Website
+                                </Button>                                   
+                            </div>                              
+                        </Col>
+                    </Row>  
+                ))}
             <End>
                 My other coding projects can be found on my Github. 
             </End>
