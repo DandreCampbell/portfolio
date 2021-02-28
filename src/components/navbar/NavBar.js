@@ -12,17 +12,10 @@ const Link = styled.span`
     }
 `;
 
-const iconStyle = {
-    fontSize: "24px",
-    "&:hover": {
-        color: "rgb(39, 221, 221)"
-    }
-};
-
 export default function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" className="nav-style" variant="dark">  
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" className="ml-auto" style={iconStyle} />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" className="ml-auto" style={{fontSize: "24px"}} />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ml-auto">
                     <Nav.Link href="/"><Link>About</Link></Nav.Link>

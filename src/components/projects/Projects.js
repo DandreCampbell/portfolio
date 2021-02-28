@@ -27,6 +27,18 @@ const Title = styled.h3`
     font-size: 44px;
 `;
 
+const centering = {
+    display:"flex", 
+    justifyContent:"center", 
+    alignItems:"center"
+};  
+
+const Btn = styled.div`
+    &:hover {
+        transform: scale(1.07);
+    }
+`;
+
 const End = styled.span`
     display: flex;
     justify-content: center;
@@ -36,12 +48,6 @@ const End = styled.span`
     font-weight: bold;
     padding-top: 50px;
 `;
-
-const centering = {
-    display:"flex", 
-    justifyContent:"center", 
-    alignItems:"center"
-};  
 
 export default function Projects() {
     return (
@@ -72,7 +78,7 @@ export default function Projects() {
                                     </li>
                                 ))}
                             </ul>     
-                            <div style={centering}>
+                            <Btn style={centering}>
                                 <Button href={item.url} style={{
                                     fontSize: "20px",                                    
                                     backgroundColor: "rgb(39, 221, 221, .9)",
@@ -81,7 +87,7 @@ export default function Projects() {
                                 }}>
                                     Visit Website
                                 </Button>                                   
-                            </div>                              
+                            </Btn>                              
                         </Col>
                     </Row>  
                 ))}
