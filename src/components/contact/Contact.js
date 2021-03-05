@@ -31,15 +31,7 @@ const SocialIcon = styled.a`
 export default function Contact() {
     return (
         <div id="contact">
-            <h2 style={{
-                fontSize: "44px",
-                display: "flex",
-                justifyContent: "center",
-                textDecoration: "underline",
-                paddingTop: "20px",
-                paddingBottom: "30px",
-            }}
-            >
+            <h2>
                 Contact
             </h2>
             <ListGroup>

@@ -22,7 +22,7 @@ export default function Timeline() {
                         {TimelineItems.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <div className="timeline-content">
+                                    <div className="timeline-content primary-fade">
                                         <h3 className="date">{item.date}</h3>
                                         <h1>{item.header}</h1>
                                         <p>{item.where}</p>

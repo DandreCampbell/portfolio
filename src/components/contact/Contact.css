@@ -1,9 +1,17 @@
-
 #contact {
     width: 100vw;
     height: 90vh;
     display: inline-block;
-    padding-top: 7%;
+    padding-top: 5%;
+}
+
+#contact h2 {
+    font-size: 44px;
+    text-decoration: underline;    
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .contact-icon {

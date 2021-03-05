@@ -3,10 +3,9 @@ import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Link = styled.span`
-    padding: 15px;
-    font-family: 'Permanent Marker';   
     font-size: 18px;        
     color: white;
+    padding: 15px;    
     &:hover {
         color: rgb(39, 221, 221);
     }

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import { Button, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
@@ -27,12 +26,6 @@ const Title = styled.h3`
     font-size: 44px;
 `;
 
-const centering = {
-    display:"flex", 
-    justifyContent:"center", 
-    alignItems:"center"
-};  
-
 const Btn = styled.div`
     &:hover {
         transform: scale(1.07);
@@ -48,6 +41,12 @@ const End = styled.span`
     font-weight: bold;
     padding-top: 50px;
 `;
+
+const centering = {
+    display:"flex", 
+    justifyContent:"center", 
+    alignItems:"center"
+};  
 
 export default function Projects() {
     return (
