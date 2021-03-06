@@ -5,12 +5,6 @@ export const ProjectItems = [
         alt: 'Photography and Video Portfolio Website', 
         description: 'Portfolio website for my photography and videos. Contains a gallery of some of my' +
         'favorite pictures that taken along with the most recent video that I have posted on my youtube channel',     
-        icons: [
-            'fab fa-html',
-            'fab fa-css3-alt',
-            'fab fa-js-square',
-            'fab fa-bootstrap'
-        ]
     },
     {
         website: 'Choose My Parts',
@@ -19,12 +13,6 @@ export const ProjectItems = [
         description: 'Website designed to recommend its users different types of computer' +
         'parts that can be used to build their own Custom PC. Provides parts ' +
         'for different budget ranges.',
-        icons: [
-            'fab fa-react',
-            'fab fa-css3-alt',
-            'fab fa-bootstrap'
-        ]
-
     },
     {
         website: 'Crypto Updates',
@@ -33,9 +21,5 @@ export const ProjectItems = [
         description: 'This site prints some of the most recent data on many popular ' +
         'cryptocurrencies such as Bitcoin. Uses the Gecko API and refreshes ' + 
         'the information as soon as it iss able to.',
-        icons: [   
-            'fab fa-react',
-            'fab fa-css3-alt'
-        ]
     }
 ];

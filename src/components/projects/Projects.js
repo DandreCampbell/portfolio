@@ -28,7 +28,7 @@ const Title = styled.h3`
 
 const Btn = styled.div`
     &:hover {
-        transform: scale(1.07);
+        transform: scale(1.05);
     }
 `;
 
@@ -45,7 +45,8 @@ const End = styled.span`
 const centering = {
     display:"flex", 
     justifyContent:"center", 
-    alignItems:"center"
+    alignItems:"center",
+    paddingTop:"30px"
 };  
 
 export default function Projects() {
@@ -59,7 +60,7 @@ export default function Projects() {
                         </Col>
                         <Col md={5} style={{paddingTop:"50px"}}>
                             <h2 style={{
-                                fontSize: "24px",
+                                fontSize: "35px",
                                 color: "rgb(39, 221, 221)",
                                 display:"flex", 
                                 justifyContent:"center", 
@@ -69,14 +70,7 @@ export default function Projects() {
                             </h2>
                             <p style={{width:"75%", color:"white", margin:"auto", paddingTop:"10px"}}>
                                 {item.description}
-                            </p>
-                            <ul style={centering}>
-                                {ProjectItems.map((item, index) => (
-                                    <li style={{fontSize:"30px", padding:"20px"}}>
-                                        <i className={item.icons[index]} />
-                                    </li>
-                                ))}
-                            </ul>     
+                            </p>   
                             <Btn style={centering}>
                                 <Button href={item.url} style={{
                                     fontSize: "20px",                                    
