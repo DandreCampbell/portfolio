@@ -12,10 +12,10 @@ export default function About() {
                         D'Andre Campbell
                     </h1>
                     {/* eslint-disable-next-line  */}
-                    <h2 className="mb-2" className="position">
+                    <h2 className="mb-2" className="position primary-fade">
                         Developer & Photographer
                     </h2>                        
-                    <p className="about-me">
+                    <p className="about-me primary-fade">
                         Hey, my name is D’Andre. I’m a self taught, aspiring Front End Developer based out 
                         of New York. I choose this area of development because it allows me to combine my 
                         creative side with my love for coding. Currently, I’m working in the IT field as 
@@ -27,7 +27,7 @@ export default function About() {
                 <Col lg={6} style={{paddingTop:"50px"}}>
                     <img src={dev} alt="Goals Illustration"
                     width="70%" height="auto" 
-                    className="illustration" />
+                    className="illustration primary-fade" />
                 </Col>
             </Row>
         </div>

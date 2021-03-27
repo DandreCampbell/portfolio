@@ -1,0 +1,11 @@
+/* Fade Animation */
+
+.primary-fade {
+    animation-name: pf;
+    animation-duration: 1.7s;
+  }
+  
+  @keyframes pf {
+    from { opacity: 0; }
+    to { opacity: 100;}
+  }

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css';
 import { Button, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import { ProjectItems } from './ProjectList';
@@ -54,7 +55,7 @@ export default function Projects() {
         <ProjectList id="projects">
             <Title>Projects</Title>
                 {ProjectItems.map((item, index) => (
-                    <Row style={{paddingBottom:"35px"}}>
+                    <Row className="primary-fade" style={{paddingBottom:"35px"}}>
                         <Col md={7} style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
                             <img src={screenshots[index]} alt={item.alt} width="90%" height="auto" />
                         </Col>

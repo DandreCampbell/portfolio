@@ -135,6 +135,8 @@
   }
 }
 
+/* Fade Animation */
+
 .primary-fade {
   animation-name: pf;
   animation-duration: 1.7s;

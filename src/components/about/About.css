@@ -65,6 +65,8 @@
     padding-top: 25px;
 }
 
+/* Typing Animation */
+
 @media screen and (max-width: 1400px) {
     .text-typing {
         font-size: 50px;
@@ -81,4 +83,16 @@
     .text-typing {
         font-size: 32px;
     }
+}
+
+/* Fade Animation */
+
+.primary-fade {
+    animation-name: pf;
+    animation-duration: 1.5s;
+}
+  
+@keyframes pf {
+    from { opacity: 0; }
+    to { opacity: 100;}
 }

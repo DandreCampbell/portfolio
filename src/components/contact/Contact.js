@@ -36,7 +36,7 @@ export default function Contact() {
             </h2>
             <ListGroup>
                 {ContactList.map(media => ( 
-                    <ListGroup.Item style={{border:"none", backgroundColor:"black"}}>
+                    <ListGroup.Item className="primary-fade" style={{border:"none", backgroundColor:"black"}}>
                         <SocialName style={{letterSpacing:"3px"}}>{media.social}</SocialName>
                         <SocialIcon 
                         href={media.url} 
