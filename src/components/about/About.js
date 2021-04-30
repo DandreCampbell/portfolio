@@ -6,7 +6,7 @@ import './About.css';
 export default function About() {
     return (
         <div id="about">
-            <Row style={{paddingTop:"15px", paddingBottom:"100px"}}>
+            <Row style={{paddingTop:"15px"}}>
                 <Col lg={6} style={{paddingTop:"25px"}}>
                     <h1 className="line text-typing">
                         D'Andre Campbell
