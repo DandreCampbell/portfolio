@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import './Timeline.css'
 import { TimelineItems } from './TimelineItems';
-import Footer from '../footer/Footer';
 
 const Title = styled.h2`
     display: flex;
@@ -34,8 +33,6 @@ export default function Timeline() {
                     </ul>
                 </div>
             </div>
-            
-            <Footer />
         </div>
     );
 };

@@ -1,5 +1,11 @@
 export const TimelineItems = [
     {
+        date: 'May 2021',
+        header: 'A+ Certification',
+        where: '',
+        description: ''
+    },
+    {
         date: 'October 2020',
         header: 'Security+ Certification',
         where: ' ',

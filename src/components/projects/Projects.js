@@ -1,13 +1,12 @@
 import React from 'react';
 import './Projects.css';
-import { Button, Row, Col } from 'react-bootstrap';
+import { Button, Row, Col, Card } from 'react-bootstrap';
 import styled from 'styled-components';
 import { ProjectItems } from './ProjectList';
 
 import photosite from './img/visualsbydandre.jpg';
 import comparts from './img/choosemyparts.png';
 import cryptosite from './img/cryptoupdates.png';
-import Footer from '../footer/Footer';
 
 const screenshots = [
     photosite, comparts, cryptosite
@@ -56,40 +55,27 @@ export default function Projects() {
             <Title>Projects</Title>
                 {ProjectItems.map((item, index) => (
                     <Row className="primary-fade" style={{paddingBottom:"35px"}}>
-                        <Col md={7} style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                            <img src={screenshots[index]} alt={item.alt} width="90%" height="auto" />
-                        </Col>
-                        <Col md={5} style={{paddingTop:"50px"}}>
-                            <h2 style={{
-                                fontSize: "35px",
-                                color: "rgb(39, 221, 221)",
-                                display:"flex", 
-                                justifyContent:"center", 
-                                alignItems:"center"
-                            }}>
-                                {item.website}
-                            </h2>
-                            <p style={{width:"75%", color:"white", margin:"auto", paddingTop:"10px"}}>
-                                {item.description}
-                            </p>   
-                            <Btn style={centering}>
-                                <Button href={item.url} style={{
-                                    fontSize: "20px",                                    
-                                    backgroundColor: "rgb(39, 221, 221, .9)",
-                                    color: "black",
-                                    border: "none",
-                                }}>
-                                    Visit Website
-                                </Button>                                   
-                            </Btn>                              
+                        <Col style={centering}>
+                            <Card style={{width:"500px", height:"500px", backgroundColor:"black", border:"1px solid" ,boxShadow:"5px 5px 10px grey"}}>
+                                <Card.Img variant="top" src={screenshots[index]} alt={item.alt} width="90%" height="auto" />    
+                                <h2 style={centering}>{item.website}</h2>      
+                                <Btn style={centering}>
+                                    <Button href={item.url} style={{
+                                        fontSize: "20px",                                    
+                                        backgroundColor: "rgb(39, 221, 221, .9)",
+                                        color: "black",
+                                        border: "none",
+                                    }}>
+                                        Visit Website
+                                    </Button>                                   
+                                </Btn>               
+                            </Card>
                         </Col>
                     </Row>  
                 ))}
             <End>
                 My other coding projects can be found on my Github. 
             </End>
-            
-            <Footer />
         </ProjectList>
     )
 }

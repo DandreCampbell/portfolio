@@ -1,7 +1,6 @@
 import React from 'react';
 import { ListGroup } from 'react-bootstrap';
 import { ContactList } from './ContactItems';
-import Footer from '../footer/Footer';
 import styled from 'styled-components';
 import './Contact.css';
 
@@ -18,7 +17,7 @@ const SocialIcon = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
     text-decoration: none;
     font-size: 30px;
     color: white;
@@ -49,8 +48,6 @@ export default function Contact() {
                     </ListGroup.Item>
                 ))}
             </ListGroup>   
-            
-            <Footer />
         </div>
     );
 };
