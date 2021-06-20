@@ -22,7 +22,7 @@ export const TimelineItems = [
     },
     {
         date: 'May 2019',
-        header: 'Technical Assisstant',
+        header: 'Junior System Adminstrator ',
         where: 'M&J Engineers',
         description: 'Use remote access to provide technical support and customer assistance for 100+ employee. Set up and maintain personal computers for new hires.'
     },
