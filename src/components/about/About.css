@@ -96,3 +96,22 @@
     from { opacity: 0; }
     to { opacity: 100;}
 }
+
+/* Contacts Section */
+
+.contact-icon {
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.contact-icon:hover {
+    text-decoration: none;
+    transform: scale(1.07);
+}
+
+@media screen and (max-width: 500px) {
+    .contact-icon {
+        padding: 25px;
+        font-size: 30px;       
+    }
+}

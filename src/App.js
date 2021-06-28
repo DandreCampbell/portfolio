@@ -6,7 +6,6 @@ import NavBar from './components/navbar/NavBar';
 import About from './components/about/About';
 import Timeline from "./components/timeline/Timeline";
 import Projects from './components/projects/Projects';
-import Contact from './components/contact/Contact';
 
 export default function App() {
   return (
@@ -15,7 +14,6 @@ export default function App() {
       <About />
       <Timeline />
       <Projects />
-      <Contact />
     </div>
   );
 };

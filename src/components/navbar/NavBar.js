@@ -20,7 +20,6 @@ export default function NavBar() {
                     <Nav.Link href="#about"><Link>About</Link></Nav.Link>
                     <Nav.Link href="#timeline"><Link>Timeline</Link></Nav.Link>
                     <Nav.Link href="#projects"><Link>Projects</Link></Nav.Link>
-                    <Nav.Link href="#contact"><Link>Contact</Link></Nav.Link>
                 </Nav>
             </Navbar.Collapse>     
         </Navbar>

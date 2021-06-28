@@ -1,5 +1,11 @@
 export const TimelineItems = [
     {
+        date: 'June 2021',
+        header: 'A+ Certification',
+        where: '',
+        description: ''
+    },    
+    {
         date: 'April 2021',
         header: 'Web Developer & SEO Analyst',
         where: 'TechneCo',
@@ -7,12 +13,6 @@ export const TimelineItems = [
         'Square, and Squarespace. Help improve a business\' online presence by conducting ' +
         'research for keywords, alt text for images, monitor website traffic, and other strategies ' +
         'to increase website traffic.'     
-    },
-    {
-        date: 'May 2021',
-        header: 'A+ Certification',
-        where: '',
-        description: ''
     },
     {
         date: 'October 2020',

@@ -1,7 +1,30 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, ListGroup } from 'react-bootstrap';
+import styled from 'styled-components';
 import dev from './img/dev.svg';
 import './About.css';
+import { ContactList } from './ContactItems';
+
+const SocialIcon = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    &:hover {
+        color: rgb(39, 221, 221);
+        text-decoration: none;
+    }
+`;
+
+const socialstyle = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingTop: "20px"
+}
 
 export default function About() {
     return (
@@ -29,6 +52,22 @@ export default function About() {
                     width="70%" height="auto" 
                     className="illustration primary-fade" />
                 </Col>
+            </Row>
+            <Row style={socialstyle}>
+                <ListGroup horizontal>
+                    {ContactList.map(media => ( 
+                        <ListGroup.Item className="primary-fade" style={{border:"none", backgroundColor:"black"}}>
+                            <SocialIcon 
+                            href={media.url} 
+                            className={media.cName}
+                            data-toggle="tooltip" 
+                            data-placement="right" 
+                            title={media.social}
+                            >
+                            </SocialIcon>
+                        </ListGroup.Item>
+                    ))}
+                </ListGroup>  
             </Row>
         </div>
     )
