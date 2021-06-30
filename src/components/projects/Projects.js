@@ -38,6 +38,7 @@ const Calendar = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 50px;
 `;
 
 const centering = {
