@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
+import pdf from '../../Resume.pdf';
 
 const Link = styled.span`
     font-size: 18px;        
@@ -20,6 +21,7 @@ export default function NavBar() {
                     <Nav.Link href="#about"><Link>About</Link></Nav.Link>
                     <Nav.Link href="#timeline"><Link>Timeline</Link></Nav.Link>
                     <Nav.Link href="#projects"><Link>Projects</Link></Nav.Link>
+                    <Nav.Link href={pdf}><Link>Resume</Link> </Nav.Link>
                 </Nav>
             </Navbar.Collapse>     
         </Navbar>

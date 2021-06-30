@@ -15,7 +15,7 @@ export const TimelineItems = [
         'to increase website traffic.'     
     },
     {
-        date: 'October 2020',
+        date: 'August 2020',
         header: 'Security+ Certification',
         where: '',
         description: ''
